@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="." method="POST"> {% csrf_token %}
+
+   {{form.as_p}}
+
+   <input type="submit" name="save">
+	
+
+</form>
+<p></p>
+<p></p>
+<p></p>
+
+<a href="/blogs/list">List Of Blogs</a>
+
+
+{% endblock %}

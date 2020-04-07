@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   {% for instance in article_list %}
+      <p>{{instance.id}} - <a href="/blogs/{{instance.id}}/detail">{{instance.title}}</a> : {{instance.active}}  <a href="/blogs/{{instance.id}}/update">Click To Update</a>  OR  <a href="/blogs/{{instance.id}}/delete">Click To Delete</a></p>
+
+   {% endfor %}
+   <p></p>
+   <p></p>
+   <p></p>
+   <a href="/blogs/create">Create Blogs</a>
+
+{% endblock %}

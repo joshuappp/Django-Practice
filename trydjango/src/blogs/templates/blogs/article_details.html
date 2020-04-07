@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>In App templates: {{object.title}}</h1>
+<p>{% if object.content != None  and object.content != '' %}
+      {{object.content}}
+   {% else %}
+     Content Coming soon!
+   {% endif %}
+
+
+
+</p>
+{{object.active}} 
+
+<p></p>
+<p></p>
+<p></p>
+
+<a href="/blogs/list">List Of Blogs</a>
+{% endblock %}
